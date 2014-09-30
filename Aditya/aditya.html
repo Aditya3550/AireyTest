@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/zepto.min.js"> </script>
+    <script src="js/Silly.js"></script>
+  
+</head>
+<body>
+    <button id="silly">Do It</button>
+    <button id="clear">Clear</button>
+    <div id="results"></div>
+    <script>
+        $('#silly').click(function () {
+            SILLY.DoIt($('#results'))
+        });
+
+        $('#clear').click(function () {
+            $('#results').html('');
+        });
+    </script>
+</body>
+</html>

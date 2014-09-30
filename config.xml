@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.mydomain.myapp"
+        version   = "1.0.0">
+    <name>Aditya Calculator</name>
+    <description>
+      Aditya Real Estate is a long established successful western suburbs REAL ESTATE agency offering buyers, sellers and investors a full range of property real estate services.
+    </description>
+    <author href="http://myAditya.com.au" email="aditya3550@gmail.com">
+     Vibetech India
+    </author>
+    <gap:platform name="ios" />
+    <gap:platform name="android" />
+    <gap:platform name="winphone" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+        <true/>
+    </gap:config-file>
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+        <false/>
+    </gap:config-file>
+ 
+    
+
+    <preference name="phonegap-version" value="3.3.0" />
+    <preference name="orientation" value="default" />
+    <preference name="fullscreen" value="true" />
+    <preference name="target-device" value="universal" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
+    
+    <!-- Define app splash screen for each platform. --> 
+    <gap:splash src="splash.png" />
+      
+    <gap:splash src="splash/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="splash/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="splash/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="splash/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="splash/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
+    
+    <gap:splash src="splash/andorid/splash.png"  gap:platform="android" width="640" height="960"/>
+    <gap:splash src="splash/winphone/splash.jpg"  gap:platform="winphone"/>
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon src="icons/iphone/icon-57.png" gap:platform="ios" width="57" height="57" />
+    <icon src="icons/iphone/icon-72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="icons/iphone/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
+    <icon src="icons/iphone/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    
+    <icon src="icons/iphone/icon-120.png"         gap:platform="ios"        width="120" height="120" />
+    <icon src="icons/iphone/icon-76-2x.png"         gap:platform="ios"        width="152" height="152" />
+    <icon src="icons/iphone/icon-76.png"         gap:platform="ios"        width="76" height="76" />
+    
+    <icon src="icons/android/mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="icons/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="icons/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+    <icon src="icons/winphone/icon.png" gap:platform="winphone" />
+    <icon src="icons/winphone/tileicon.png" gap:platform="winphone" gap:role="background" />
+    <access origin="*"/>
+</widget>

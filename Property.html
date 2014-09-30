@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+                    <meta name="format-detection" content="telephone=no">
+                        <title>Airey Real Estate Mobile</title>
+
+                        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+                            <link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+                                </head>
+                                <body style="height:auto;"> 
+                                    <div id="sidebar-container" class="sidebar-container">
+                                        <div class="dumbBoxWrap">
+                                            <div class="dumbBoxOverlay">
+                                                &nbsp;
+                                            </div>
+
+                                            <div class="vertical-offset">
+                                                <div class="dumbBox clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="Listing.html?st=fs&ho=True" class="button">Home Opens for sale</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="Listing.html?st=fr&ho=True" class="button">Home Opens for rent</a>
+                                                        </li>
+                                                    </ul>
+                                                    <a id="closeModal">
+                                                        <img src="images/modal_close.png"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <nav class="sidebar-menu sidebar-effect-4">
+                                            <ul id="navigation">
+                                                <li><img src="images/logo_Blue.png" /></li>
+                                                <li><a class="ico home" href="index.html">Home</a></li>
+                                                <li><a class="ico forsale" href="Search.html">For Sale</a></li>
+                                                <li><a class="ico forrent" href="Search.html">For Rent</a></li>
+                                                <li><a class="ico open" href="javascript:void(0)">Home Opens</a></li>
+                                                <li><a class="ico outside" href="">Outside Property</a></li>
+                                                <li><a class="ico near" href="Map.html?for=near">Properties Near Me</a></li>
+                                                <li><a class="ico fav" id="favLink" href="javascript:void(0)">My Favourites</a></li>	
+                                                <li><a class="ico contact" href="Contact.html">Contact</a></li>				
+                                            </ul>
+                                        </nav>
+
+                                        <div class="sidebar-pusher">
+                                            <div class="sidebar-content">
+                                                <div class="sidebar-content-inner">
+
+                                                    <header>
+                                                        <div id="sidebar-trigger-effects">
+                                                            <button data-effect="sidebar-effect-4" id="menu-bars"></button>
+                                                        </div>
+                                                        <div class="logo"><img src="images/logo_Blue.png" alt="Airey Real Estate" class="logoImgInner" /></div>
+
+                                                        <div class="back">
+                                                            <a class="navBack" onclick="javascript:history.back(-1);" href="javascript:void(0);">Back</a>
+                                                        </div>
+                                                    </header>
+
+                                                    <div class="content homeContent" >
+                                                          <div class="borderTopNone fieldsetDiv clearfix">
+
+                                                            <div class="Property">	
+
+                                                                <h3 id="address"></h3>
+                                                                <div class="PropImg">
+                                                                    <div class="iconsBB">
+                                                                    </div>
+                                                                    <div class="PropPrice">
+                                                                    </div>
+                                                                    <br />
+                                                                    <div class="flexslider">
+                                                                        <div class="ajaxLoaderContent" id="slider-loader" style="width:100%;">
+                                                                            <img id="loader" src="images/ajax-loader.gif">
+                                                                        </div>
+                                                                        <ul class="slides">
+                                                                            <!--li><a href=""><img src="images/pic1.jpg" /><p class="flex-caption">1 of 5</p></a></li>
+                                                                            <li><a href=""><img src="images/pic2.jpg" /><p class="flex-caption">2 of 5</p></a></li>
+                                                                            <li><a href=""><img src="images/pic3.jpg" /><p class="flex-caption">3 of 5</p></a></li>
+                                                                            <li><a href=""><img src="images/pic4.jpg" /><p class="flex-caption">4 of 5</p></a></li>
+                                                                            <li><a href=""><img src="images/pic5.jpg"  /><p class="flex-caption">5 of 5</p></a></li-->
+
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <h4>Property Description </h4>
+                                                                <div class="WrapInside">
+                                                                    <div id="publicDescShort">
+                                                                        <!--h3>Rarely available in this prestigious location.</h3>
+    
+                                                                        <p>Accommodation includes a large master bedroom with WIR, plus marble ensuite bathroom The bedroom opens on to the large front balcony. At the other end of the apartment is a second double sized bedroom and another luxury bathroom suitable for guests. There is also a large study nook, ideal for a home office.</p>
+    
+                                                                        <p>The expansive lounge dining room has large glass sliding doors which can be completely opened to the balcony, which easily accommodates an outdoor setting for entertaining.</p>
+                                                                        <p>The luxury kitchen is fully equipped with European appliances, ample cupboards and central eating bar with excellent storage. This high quality, fully air-conditioned apartment offers full security entry as well as lift, intercom and secure parking plus storage</p>
+    
+                                                                        <p>Ideal for professionals and retirees or as a lockup and leave city pad. Close to restaurants, shops transport, UWA and river, parks and Yacht Clubs.</p>
+    
+                                                                        <p>Realistically priced and open to offers  </p>
+                                                                         <span class="read-more">+ read more</span-->
+                                                                    </div>
+                                                                    <div id="publicDesc"  style="display:none;"></div>
+
+                                                                </div>
+
+
+                                                                <h4>Inspection Time</h4>
+                                                                <div class="WrapInside">
+                                                                    <div id="inspectTime">
+                                                                        Not available
+                                                                    </div>
+                                                                </div>
+
+                                                                <h4>Share This Property</h4>
+                                                                <div class="WrapInside">
+                                                                    <div id="Share">
+                                                                        <a href="#" class="share_friend" id="shareEF">Email this to a Friend</a>
+                                                                        <div class="formFriend" id="shareEFDiv" style="display:none;">
+                                                                            <a href="javascript:void(0);" class="share_friend" id="shareEF1" >Email this to a Friend</a>
+                                                                            <p id="subject" style="font-size:12px;"></p>
+                                                                            <input type="text" id="txtNameF" />
+                                                                            <input type="text" id="txtEmailF" />
+                                                                            <input type="text" id="txtName1" />
+                                                                            <input type="text" id="txtEmail1" />
+                                                                            <textarea id="txtEnquiry1"></textarea>
+                                                                            <br /><br />
+                                                                            <a id="btnShare" href="javascript:void(0)" class="button">Share</a>
+                                                                            <br /><br />
+                                                                        </div>
+                                                                        <a href="#" class="share_facebook">Share this on Facebook</a>
+                                                                        <a href="#" class="share_twitter">Share this on Twitter</a>
+                                                                    </div>  
+                                                                </div>
+
+                                                                <h4>Show on Map</h4>
+                                                                <div class="WrapInside">
+                                                                    <img id="staticMap" src="" />
+                                                                    <div class="ajaxLoaderContent" id="map-loader">
+                                                                        <img id="loader" src="images/ajax-loader.gif">
+                                                                    </div>
+                                                                </div>
+
+                                                                <h4>Agent Details</h4>
+                                                                <div class="WrapInside">
+                                                                    <div class="third"><img id="agentImage" src="" />
+                                                                        <div class="ajaxLoaderContent" id="agentImg-loader">
+                                                                            <img id="loader" src="images/ajax-loader.gif">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="two-third">
+                                                                        <h3 id="agentName"></h3>
+                                                                        <a class="button text-center" href="#" id="agencyPhone"></a>
+                                                                        <a class="button text-center" href="#" id="agentMobileNo"></a>
+                                                                    </div>
+                                                                    <br />
+                                                                    <strong></strong>
+
+
+
+                                                                </div>
+
+                                                                <h4>Enquire Now</h4>
+                                                                <form>
+                                                                    <input id="txtName" type="text">
+                                                                        <input id="txtEmail" type="text">
+                                                                            <textarea id="txtEnquiry"></textarea>
+                                                                            <a class="button center" id="btnSendEnq" >SEND MESSAGE</a>
+                                                                            </form>
+                                                                            </div>
+
+
+                                                                            </div>
+
+                                                                            </div> 
+
+                                                                            <div class="push"></div>
+                                                                            <div class="footerInner">
+                                                                                <a href="javascript:void(0)" class="map" title="View on Map"></a>
+                                                                                <a href="Search.html" class="search" title="Search"></a>
+                                                                                <a href="Map.html?for=near" class="near" title="Near Me"></a>
+                                                                                <a href="javascript:void(0)" class="favourites" title="My Favourites">
+                                                                                    <span id="spnFavCount" class="countn"></span>
+                                                                                </a>
+
+                                                                            </div>
+
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            <script src="javascript/jquery-1.js" type="text/javascript"></script>
+                                                                            <script src="javascript/classie.js" type="text/javascript"></script>
+                                                                            <script src="javascript/sidebarEffects.js" type="text/javascript"></script>
+                                                                            <script src="javascript/custom.js" type="text/javascript"></script>
+                                                                            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+                                                                            <script type='text/javascript' src="javascript/jquery.flexslider-min.js"></script>
+                                                                            <script src="javascript/jquery.parseparams.js" type="text/javascript"></script>
+                                                                            <script src="javascript/jquery-dateFormat.min.js" type="text/javascript"></script>
+                                                                            <script src="javascript/jquery.watermarkinput.js" type="text/javascript"></script>
+                                                                            <script src="javascript/custom-property-page.js" type="text/javascript"></script>
+                                                                            <script src="cordova.js"></script>
+                                                                            <script src="cordova_plugins.js"></script>
+                                                                            </body></html>
