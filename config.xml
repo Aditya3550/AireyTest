@@ -5,11 +5,11 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.mydomain.myapp"
         version   = "1.0.0">
-    <name>Aditya Calculator</name>
+    <name>Aditya Real Estate</name>
     <description>
       Aditya Real Estate is a long established successful western suburbs REAL ESTATE agency offering buyers, sellers and investors a full range of property real estate services.
     </description>
-    <author href="http://myAditya.com.au" email="aditya3550@gmail.com">
+    <author href="http://myAditya.com.au" email="aditya.chaturvedi@vibetechindia.com">
      Vibetech India
     </author>
     <gap:platform name="ios" />
